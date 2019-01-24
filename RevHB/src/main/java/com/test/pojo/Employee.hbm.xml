@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated Jan 24, 2019 3:39:49 PM by Hibernate Tools 5.3.6.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class name="com.test.pojo.Employee" table="employee">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+            </id>
+            <property generated="never" lazy="false" name="lastName" optimistic-lock="true" type="string" unique="false">
+            <column length="45" name="`Last Name`"/>
+        </property>
+        <property generated="never" lazy="false" name="department" optimistic-lock="true" type="string" unique="false">
+            <column length="45" name="Department"/>
+        </property>
+        <property generated="never" lazy="false" name="email" optimistic-lock="true" type="string" unique="false">
+            <column length="45" name="Email"/>
+        </property>
+        <property generated="never" lazy="false" name="deptId" optimistic-lock="true" type="java.lang.Integer" unique="false">
+            <column name="DeptId"/>
+        </property>
+       </class>
+</hibernate-mapping>
