@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated Jan 28, 2019 2:54:22 PM by Hibernate Tools 5.3.6.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class name="com.jcg.hibernate.crud.operations.curdDb" table="student">
+        <id name="studentId" type="java.lang.Integer">
+            <column name="student_id"/>
+            <generator class="assigned"/>
+        </id>
+        <property generated="never" lazy="false" name="studentName" optimistic-lock="true" type="string" unique="false">
+            <column length="50" name="student_name"/>
+        </property>
+        <property generated="never" lazy="false" name="rollNumber" optimistic-lock="true" type="string" unique="false">
+            <column length="50" name="roll_number"/>
+        </property>
+        <property generated="never" lazy="false" name="course" optimistic-lock="true" type="string" unique="false">
+            <column length="50" name="course"/>
+        </property>
+    </class>
+</hibernate-mapping>
